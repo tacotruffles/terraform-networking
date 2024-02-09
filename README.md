@@ -1,6 +1,6 @@
 # Configure IaC and Stand Up AWS VPC/Networking
 
-## Summary
+## Summary 
 
 This repo must be stood up first in order to set up the necessary back end tracking across all the cloud infrastructure deployed via Terraform and Ansible, which will be used in the other repos that comprise a full stack platform: API, WWW, with Lambdas that process uploads.
 
