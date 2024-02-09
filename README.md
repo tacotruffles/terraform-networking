@@ -1,6 +1,6 @@
-# Configure IaC and Stand Up AWS VPC/Networking
+# Seed Terraform Backend and Stand Up AWS VPC/Networking for Multiple Environments
 
-## Summary 
+## Summary
 
 This repo must be stood up first in order to set up the necessary back end tracking across all the cloud infrastructure deployed via Terraform and Ansible, which will be used in the other repos that comprise a full stack platform: API, WWW, with Lambdas that process uploads.
 
@@ -8,8 +8,8 @@ There is a one-time "seeding" process. Once, completed, creating the `stage` and
 
 After the VPC/Networking infrastructure is successfully deployed. The order to deploy the other parts of the iSAT Recording platform will be:
 
-`API -> WWW -> Lambda -> Computing`
- 
+`Lambda -> API -> WWW`
+
 How to configure and stand up each part of the platform will be contained in each README.md file in the corresponding repo.
 
 For this repo. The stand up process also incorporates a one-time `seeding` process:
