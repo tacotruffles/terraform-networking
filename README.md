@@ -33,7 +33,7 @@ You'll need the following prequisites:
 
 ## Step 1: Configure Repo Secrets
 
-Add the `AWS Access key ID`	and `AWS Secret access` keys to the `terraform-network` 
+Add the `AWS Access key ID`	and `AWS Secret access` keys to the `terraform-network` repo as the following action secrets: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 
 ## Step 2: Configure Automated Deployment
 
@@ -94,3 +94,9 @@ This will be the live environment
 1. Create `prod` branch and push up to repo
 2. Confirm GitHub action completes successfully
 3. Other repos will ingest the needed security groups, VPC, etc. by loading the global networking Terraform state file
+
+## Teardown Process
+
+Before tearding down networking both the staging and production environments in higher levels of the stack must be torn down first.
+
+1. Run the `terraform/tf.sh destroy` command to tear down all Networking Assets
