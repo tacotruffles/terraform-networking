@@ -4,8 +4,8 @@
 
 A single VPC for staging and production AWS assets:
 
-* An EC2 jumphost with an Elastic IP for document db remote access
-* NAT Gateway that is assigned an Elastic IP so that lambdas can either communicate with documentdb and/or be whitelisted on external resources (i.e. mongodb.com)
+* An EC2 jump host with an Elastic IP for document db remote access
+* NAT Gateway that is assigned an Elastic IP so that lambdas can either communicate with DocumentDB and/or be whitelisted on external resources (i.e. mongodb.com)
 * 4 Subnets for availability zone redundancy
 
 ## Summary
